@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+        <meta charset="UTF-8">
+        <title>Jednoduchá webová kalkulačka</title>
+</head>
+
+<body>
+        <h1>Jednoduchá webová kalkulačka</h1>
+        <input type="text" id="cislo1" size="5" /> + <input type="text" id="cislo2" size="5" />
+        <button id="tlacitko">Sečti!</button>
+        <script type="text/javascript">
+                // Sem budeme psát náš kód
+
+          window.onload = function() {
+
+            var tlacitko = document.getElementById('tlacitko');
+            var cislo1 = document.getElementById('cislo1');
+            var cislo2 = document.getElementById('cislo2');
+
+            function secti() {
+              alert(parseInt(cislo1.value) + parseInt(cislo2.value));
+            }
+
+            tlacitko.onclick = secti;
+         }
+
+        </script>
+        <input type="file" name="file" id="file">
+        <script src="ahoj.js"></script>
+</body>
+
+</html>
